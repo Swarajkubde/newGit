@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <main>
+        <section class="sec-first">
+            <div class="sec left">
+                <img class="pimg" width="184" src="profile.jpg" alt="">
+            </div>
+            <div class="sec right">
+                <div class="upper-right">
+                    <div class="your-name">Your Name</div>
+                    <div class="followers">
+                        <ul>
+                            <li>10 ###</li>
+                            <li>270 Followers</li>
+                            <li>100 Following</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="lower-right"><button class="btn1">
+                        Follow
+                    </button></div>
+            </div>
+
+        </section>
+        <hr>
+        <section class="second-sec">
+            <div class=" comm post">
+                <button class="tosee postBtn">
+                    Posts
+                </button>
+            </div>
+            <div class="vertical-line">
+
+            </div>
+            <div class=" comm mention">
+                <button class="tosee mentionBtn">
+                    Mentions
+                </button>
+            </div>
+        </section>
+        <section class="sec-main">
+
+            <div class="sec-third">
+                <!-- // post section -->
+                <div class="card-container">
+                    //post
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ad at voluptatibus commodi assumenda quas molestias ducimus perspiciatis autem, suscipit porro sequi adipisci officiis sed totam labore dignissimos sunt error.
+                    //img
+                    like, share, etc
+                </div>
+                <div class="card-container">
+                    //post
+                    //img
+                    like, share, etc
+                </div>
+                <div class="card-container">
+                    //post
+                    //img
+                    like, share, etc
+                </div>
+                <div class="card-container">
+                    //post
+                    //img
+                    like, share, etc
+                </div>
+                <div class="card-container">
+                    //post
+                    //img
+                    like, share, etc
+                </div>
+                <div class="card-container">
+                    //post
+                    //img
+                    like, share, etc
+                </div>
+                <div class="card-container">
+                    //post
+                    //img
+                    like, share, etc
+                </div>
+               
+            </div>
+            <div class="hideContent">
+                <div class="card-container">
+                    //mention
+                    //img
+                    like, share, etc
+                </div>
+                <div class="card-container">
+                    //mention
+                    //img
+                    like, share, etc
+                </div>
+                <div class="card-container">
+                    //mention
+                    //img
+                    like, share, etc
+                </div>
+                <div class="card-container">
+                    //mention
+                    //img
+                    like, share, etc
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+    const btn1 = document.querySelector(".postBtn")
+    const btn2 = document.querySelector(".mentionBtn")
+
+    const div = document.querySelector(".sec-third")
+    const div2 = document.querySelector(".hideContent")
+    
+    // console.log("heyfun1")
+    function revealContent(){
+        if (div.classList.contains("hideContent")) {
+            
+            div.classList.remove("hideContent")
+            div2.classList.add("hideContent")
+            console.log("heyfun1")
+
+        }
+        // else {
+        //     div.classList.add("hideContent")
+        // }
+    }
+    function revealMention(){
+        if (div2.classList.contains("hideContent")) {
+             div2.classList.remove("hideContent")
+             div2.classList.add("sec-fourth")
+             div.classList.add("hideContent")
+            
+            console.log("hey")
+        }
+        else {
+            div2.classList.add("sec-fourth")
+            // div.classList.remove("hideContent")
+            console.log("heyelse")
+            
+        }
+    }
+    btn1.addEventListener("click", revealContent)
+    btn2.addEventListener("click", revealMention)
+    console.log(btn1)
+    console.log(div)
+</script>
+
+</html>
